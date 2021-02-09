@@ -3,6 +3,7 @@
 * Created by Aashish Loknath Panigrahi
 * */
 package chp0;
+import chp0.FuckYou;
 
 //HelloWorld class
 class HelloName{
@@ -22,7 +23,11 @@ public class HelloWorld {
         System.out.println("Hello, World!");
 
         //Creating HelloName object to print name of the individual
-        HelloName aashish = new HelloName("Aashish");
-        System.out.println(aashish.printHello());
+        HelloName aashish0 = new HelloName("Aashish");
+        System.out.println(aashish0.printHello());
+
+        //Creating FuckYou object to say fuck you to the individual
+        FuckYou aashish1 = new FuckYou("Aashish");
+        System.out.println(aashish1.printFuckYou());
     }
 }
