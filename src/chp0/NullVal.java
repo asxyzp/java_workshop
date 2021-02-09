@@ -29,6 +29,5 @@ public class NullVal {
         NullVal yesNull = null;
         //yesNull.printVal();   //UNCOMMENT : Will throw error because printVal() can be accessed by null reference object
 
-        StringToCharArr obj = new StringToCharArr("Aashish");
     }
 }
