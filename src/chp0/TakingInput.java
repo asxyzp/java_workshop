@@ -5,6 +5,8 @@ package chp0;
 import java.util.Scanner;
 public class TakingInput {
     public static void main(String[] args){
+
+        //Using Scanner class to get input
         Scanner scan = new Scanner(System.in);
         System.out.println("a?\t");
         double a = scan.nextDouble();
