@@ -2,6 +2,7 @@
 	Understanding loops in Java
 	Created by Aashish Loknath Panigrahi
 */
+package chp1;
 public class Loops{
 	public static void main(String args[]){
 
@@ -36,16 +37,37 @@ public class Loops{
 				continue;
 			}
 		}
+		System.out.println();
 
 		//An example using both break and continue
-		String letters = ["A","B","C","D","E","F"];
+		String[] letters = {"A","B","C","D","E","F"};
 		for(String letter : letters){
+			System.out.println(letter);
 			if(letter.equals("A")){
-				
+				continue;
 			}
-			else{
-
+			if(letter.equals("C")){
+				break;
 			}
 		}
+		System.out.println();
+
+		//Using while loop to print string in string array
+		int count = 0;
+		output="";
+		while(count<letters.length){
+			output+=letters[count];
+			++count;
+		}
+		System.out.println(output+"\n");
+		System.out.println();
+
+		//Understanding do-while loop
+		output="";
+		count=0;
+		do{
+			output+=letters[count];
+			++count;
+		}while(count<letters.length);
 	}
 }
